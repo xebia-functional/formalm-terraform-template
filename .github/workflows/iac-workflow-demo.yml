@@ -96,5 +96,5 @@ jobs:
           DATA: ${{steps.listFiles.outputs.JSON_CONTENT}}
         with:
           script: |
-            const script = require('./.github/workflows/scripts/reports-to-comments.js')
+            const script = require('./.github/workflows/scripts/codeql-comment.js')
             script({github, context})
